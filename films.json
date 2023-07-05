@@ -1,0 +1,173 @@
+[
+  {
+    "id": 0,
+    "Title": "The Godfather",
+    "Description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
+    "Genre": {
+      "Name": "Crime",
+      "Description": "Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal."
+    },
+    "Director": {
+      "Name": "Francis Ford Coppola",
+      "Bio": "Francis Ford Coppola, American motion-picture director, writer, and producer whose films range from sweeping epics to small-scale character studies. As the director of films such as The Godfather (1972), The Conversation (1974), and Apocalypse Now (1979), he enjoyed his greatest success and influence in the 1970s, when he attempted to create an alternative to the Hollywood system of film production and distribution.",
+      "Birth": "1939"
+    },
+    "Date": "1972",
+    "ImagePath": "https://www.imdb.com/title/tt0068646/mediaviewer/rm746868224/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 1,
+    "Title": "The Shawshank Redemption",
+    "Description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "The drama genre features stories with high stakes and a lot of conflicts. They’re plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters. Films that fall into drama sub-genres include historical drama, romantic drama, teen drama, medical drama, docudrama, and film noir."
+    },
+    "Director": {
+      "Name": "Frank Darabont",
+      "Bio": "Three-time Oscar nominee Frank Darabont was born in a refugee camp in 1959 in Montbeliard, France, the son of Hungarian parents who had fled Budapest during the failed 1956 Hungarian revolution. Brought to America as an infant, he settled with his family in Los Angeles and attended Hollywood High School.",
+      "Birth": "1959"
+    },
+    "ImagePath": "https://www.imdb.com/title/tt0111161/mediaviewer/rm10105600/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 2,
+    "Title": "The Dark Knight",
+    "Description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "Date": "2008",
+    "Genre": {
+      "Name": "Action",
+      "Description": "Movies in the action genre are fast-paced and include a lot of action like fight scenes, chase scenes, and slow-motion shots. They can feature superheroes, martial arts, or exciting stunts. These high-octane films are more about the execution of the plot rather than the plot itself. Action movies are meant to be thrilling to watch and leave audience members on the edge of their seats. Cop movies, disaster films, and some spy films all fall under the action category."
+    },
+    "Director": {
+      "Name": "Christopher Nolan",
+      "Bio": "Christopher Edward Nolan is a British-American film director, producer, and screenwriter. He is one of the highest-grossing directors in history and among the most acclaimed and influential filmmakers of the 21st century.",
+      "Birth": "1970"
+    },
+    "ImagePath": "https://www.imdb.com/title/tt0468569/mediaviewer/rm2380564480/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 3,
+    "Title": "Pulp Fiction",
+    "Description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "Genre": {
+      "Name": "Crime",
+      "Description": "Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal."
+    },
+    "Director": {
+      "Name": "Quentin Tarantino",
+      "Bio": "Quentin Jerome Tarantino is an American filmmaker and screenwriter. His films are characterized by nonlinear storylines, satirical subject matter, aestheticization of violence, extended scenes of dialogue, ensemble casts, references to popular culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the 1960s to the 1980s, alternate history, and features of neo-noir film.",
+      "Birth": "1963"
+    },
+    "Date": "1994",
+    "ImagePath": "https://www.imdb.com/title/tt0110912/mediaviewer/rm1995646976/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 4,
+    "Title": "Schindler's List",
+    "Description": "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+    "Genre": {
+      "Name": "Biography",
+      "Description": "Biography films are based on the life of a person or a group of people. They can also be based on events that have shaped society as a whole. They focus on the accomplishments and personal struggles of the individuals involved, often exploring their motivations and impact on the world. Biography films often present a historical perspective and offer insights into the lives of influential figures."
+    },
+    "Director": {
+      "Name": "Steven Spielberg",
+      "Bio": "Steven Allan Spielberg is an American film director, producer, and screenwriter. He is considered one of the founding pioneers of the New Hollywood era and one of the most popular directors and producers in film history. Spielberg started in Hollywood directing television and several minor theatrical releases.",
+      "Birth": "1946"
+    },
+    "Date": "1993",
+    "ImagePath": "https://www.imdb.com/title/tt0108052/mediaviewer/rm3861612800/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 5,
+    "Title": "The Godfather: Part II",
+    "Description": "The early life and career of Vito Corleone in 1920s New York City are portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.",
+    "Genre": {
+      "Name": "Crime",
+      "Description": "Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal."
+    },
+    "Director": {
+      "Name": "Francis Ford Coppola",
+      "Bio": "Francis Ford Coppola, American motion-picture director, writer, and producer whose films range from sweeping epics to small-scale character studies. As the director of films such as The Godfather (1972), The Conversation (1974), and Apocalypse Now (1979), he enjoyed his greatest success and influence in the 1970s, when he attempted to create an alternative to the Hollywood system of film production and distribution.",
+      "Birth": "1939"
+    },
+    "Date": "1974",
+    "ImagePath": "https://www.imdb.com/title/tt0071562/mediaviewer/rm387814272/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 6,
+    "Title": "12 Angry Men",
+    "Description": "A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "The drama genre features stories with high stakes and a lot of conflicts. They’re plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters. Films that fall into drama sub-genres include historical drama, romantic drama, teen drama, medical drama, docudrama, and film noir."
+    },
+    "Director": {
+      "Name": "Sidney Lumet",
+      "Bio": "Sidney Lumet was a master of cinema, best known for his technical knowledge and his skill at getting first-rate performances from his actors -- and for shooting most of his films in his beloved New York. He made over 40 movies, often complex and emotional, but seldom overly sentimental. Although his politics were somewhat left-leaning and he often treated socially relevant themes in his films, Lumet claimed to have no political agenda. However, he often said that his aim was to simply tell the truth.",
+      "Birth": "1924",
+      "Death": "2011"
+    },
+    "Date": "1957",
+    "ImagePath": "https://www.imdb.com/title/tt0050083/mediaviewer/rm2141548544/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 7,
+    "Title": "The Lord of the Rings: The Return of the King",
+    "Description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+    "Genre": {
+      "Name": "Adventure",
+      "Description": "Adventure films are exciting stories, with new experiences or exotic locales, where characters often face physical danger and overcome various obstacles. These films typically feature high-energy action scenes and often involve a journey, quest, or mission undertaken by the main characters. Adventure movies can be set in any time period and may include elements of fantasy, science fiction, or historical fiction."
+    },
+    "Director": {
+      "Name": "Peter Jackson",
+      "Bio": "Sir Peter Robert Jackson is a New Zealand film director, screenwriter, and film producer. He is best known as the director, writer, and producer of the Lord of the Rings trilogy and its prequel The Hobbit trilogy, both of which are adapted from the novels of the same name by J.R.R. Tolkien.",
+      "Birth": "1961",
+      "Death": ""
+    },
+    "Date": "2003",
+    "ImagePath": "https://www.imdb.com/title/tt0167260/mediaviewer/rm1963456512/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 8,
+    "Title": "Fight Club",
+    "Description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "The drama genre features stories with high stakes and a lot of conflicts. They’re plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters. Films that fall into drama sub-genres include historical drama, romantic drama, teen drama, medical drama, docudrama, and film noir."
+    },
+    "Director": {
+      "Name": "David Fincher",
+      "Bio": "David Fincher is an American film director, film producer, television director, television producer, and music video director. He was nominated for the Academy Award for Best Director for his 2008 film The Curious Case of Benjamin Button and his 2010 film The Social Network. For his work on the latter, he won the Golden Globe Award for Best Director and the BAFTA Award for Best Direction.",
+      "Birth": "1962"
+    },
+    "Date": "1999",
+    "ImagePath": "https://www.imdb.com/title/tt0137523/mediaviewer/rm568220416/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 9,
+    "Title": "Goodfellas",
+    "Description": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.",
+    "Genre": {
+      "Name": "Crime",
+      "Description": "Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal."
+    },
+    "Director": {
+      "Name": "Martin Scorsese",
+      "Bio": "Martin Scorsese is an American film director, producer, screenwriter, and actor. One of the major figures of the New Hollywood era, he is widely regarded as one of the most significant and influential directors in film history. Scorsese's body of work explores themes such as Italian-American identity, Catholic concepts of guilt and redemption, faith, machismo, nihilism, crime and sectarianism.",
+      "Birth": "1942"
+    },
+    "Date": "1990",
+    "ImagePath": "https://www.imdb.com/title/tt0099685/mediaviewer/rm1314688000/?ref_=ext_shr_lnk",
+    "Featured": true
+  }
+]
