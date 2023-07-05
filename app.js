@@ -4,6 +4,9 @@ const app = express();
 const fs = require('fs');
 const morgan = require('morgan');
 
+const cors = require('cors');
+app.use(cors());
+
 const Film = require('./models/filmModel');
 
 app.use(morgan('dev'));
@@ -125,6 +128,7 @@ app.get('/api/films/director/:name', async (req, res) => {
 // });
 
 // TODO: first letter capitalise for user input
-
+// TODO Validating data
+// TODO: Add users
 // Connect locally to mongodb
 // mongodb://localhost:27017/film-finder
