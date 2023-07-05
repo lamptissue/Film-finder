@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
   res.send('Hello World!');
 });
 
+//get all films
 app.get('/api/films/', (req, res) => {
   res.status(200).json({
     status: 'Success',
@@ -25,24 +26,7 @@ app.get('/api/films/', (req, res) => {
   });
 });
 
-app.get('/api/films/:title', (req, res) => {
-  const title = films.find((film) => film.Title === req.params.title);
-
-  if (!title) {
-    return res.status(404).json({
-      status: 'fail',
-      message: 'Invalid Film',
-    });
-  }
-
-  res.status(200).json({
-    status: 'Success',
-    data: {
-      title,
-    },
-  });
-});
-
+//get films by id
 app.get('/api/films/:id', (req, res) => {
   const id = req.params.id * 1;
 
@@ -63,6 +47,50 @@ app.get('/api/films/:id', (req, res) => {
   });
 });
 
+//get films by genre
+app.get('/api/films/genre/:name', (req, res) => {
+  const genre = films.find(
+    (films) => films.Genre.Name === req.params.name
+  ).Genre;
+
+  if (!genre) {
+    return res.status(404).json({
+      status: 'Fail',
+      message: 'Genre not found',
+    });
+  }
+
+  res.status(200).json({
+    status: 'Success',
+    data: {
+      genre,
+    },
+  });
+});
+
+//get director
+app.get('/api/films/director/:name', (req, res) => {
+  const director = films.filter(
+    (films) => films.Director.Name === req.params.name
+  );
+
+  if (!director) {
+    return res.status(404).json({
+      status: 'Fail',
+      message: 'Director not found',
+    });
+  }
+
+  res.status(200).json({
+    status: 'Success',
+    data: {
+      director,
+    },
+  });
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
+
+// TODO: first letter capitalise for user input

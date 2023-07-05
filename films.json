@@ -2,7 +2,7 @@
   {
     "id": 0,
     "Title": "The Godfather",
-    "Description": "The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
+    "Description": "The aging patriarch of an organised crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.",
     "Genre": {
       "Name": "Crime",
       "Description": "Crime film is a genre that revolves around the action of a criminal mastermind. A Crime film will often revolve around the criminal himself, chronicling his rise and fall. Some Crime films will have a storyline that follows the criminal's victim, yet others follow the person in pursuit of the criminal."
@@ -59,7 +59,7 @@
     },
     "Director": {
       "Name": "Quentin Tarantino",
-      "Bio": "Quentin Jerome Tarantino is an American filmmaker and screenwriter. His films are characterized by nonlinear storylines, satirical subject matter, aestheticization of violence, extended scenes of dialogue, ensemble casts, references to popular culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the 1960s to the 1980s, alternate history, and features of neo-noir film.",
+      "Bio": "Quentin Jerome Tarantino is an American filmmaker and screenwriter. His films are characterised by nonlinear storylines, satirical subject matter, aestheticization of violence, extended scenes of dialogue, ensemble casts, references to popular culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the 1960s to the 1980s, alternate history, and features of neo-noir film.",
       "Birth": "1963"
     },
     "Date": "1994",
