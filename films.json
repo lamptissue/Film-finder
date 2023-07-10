@@ -29,6 +29,7 @@
       "Bio": "Three-time Oscar nominee Frank Darabont was born in a refugee camp in 1959 in Montbeliard, France, the son of Hungarian parents who had fled Budapest during the failed 1956 Hungarian revolution. Brought to America as an infant, he settled with his family in Los Angeles and attended Hollywood High School.",
       "Birth": "1959"
     },
+    "Date": "1994",
     "ImagePath": "https://www.imdb.com/title/tt0111161/mediaviewer/rm10105600/?ref_=ext_shr_lnk",
     "Featured": true
   },
@@ -129,8 +130,7 @@
     "Director": {
       "Name": "Peter Jackson",
       "Bio": "Sir Peter Robert Jackson is a New Zealand film director, screenwriter, and film producer. He is best known as the director, writer, and producer of the Lord of the Rings trilogy and its prequel The Hobbit trilogy, both of which are adapted from the novels of the same name by J.R.R. Tolkien.",
-      "Birth": "1961",
-      "Death": ""
+      "Birth": "1961"
     },
     "Date": "2003",
     "ImagePath": "https://www.imdb.com/title/tt0167260/mediaviewer/rm1963456512/?ref_=ext_shr_lnk",
@@ -168,6 +168,42 @@
     },
     "Date": "1990",
     "ImagePath": "https://www.imdb.com/title/tt0099685/mediaviewer/rm1314688000/?ref_=ext_shr_lnk",
+    "Featured": true
+  },
+  {
+    "id": 10,
+    "Title": "Casablanca",
+    "Description": "Set during World War II, the film follows an American expatriate who must choose between his love for a woman and helping her Czech Resistance leader husband escape the Vichy-controlled city of Casablanca.",
+    "Genre": {
+      "Name": "Drama",
+      "Description": "A genre focused on character development and interpersonal conflicts."
+    },
+    "Director": {
+      "Name": "Michael Curtiz",
+      "Bio": "Michael Curtiz was a Hungarian-born American film director, known for his work on a variety of genres including drama, romance, and adventure.",
+      "Birth": "1886",
+      "Death": "1962"
+    },
+    "Date": "November 26, 1942",
+    "ImagePath": "",
+    "Featured": true
+  },
+  {
+    "id": 11,
+    "Title": "Citizen Kane",
+    "Description": "The film examines the life and legacy of Charles Foster Kane, a wealthy newspaper tycoon, as a reporter investigates the meaning of Kane's dying words: 'Rosebud.'",
+    "Genre": {
+      "Name": "Mystery",
+      "Description": "A genre focused on solving puzzles or unraveling secrets."
+    },
+    "Director": {
+      "Name": "Orson Welles",
+      "Bio": "Orson Welles was an American actor, director, writer, and producer who is widely regarded as one of the greatest filmmakers in cinema history.",
+      "Birth": "1915",
+      "Death": "1985"
+    },
+    "Date": "1941",
+    "ImagePath": "citizen-kane.jpg",
     "Featured": true
   }
 ]
