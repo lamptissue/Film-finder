@@ -36,6 +36,7 @@ connectDB().then(() => {
 
 //accesses local json file
 // const films = JSON.parse(fs.readFileSync(`${__dirname}/films.json`));
+const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`));
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
@@ -123,6 +124,89 @@ app.get('/api/films/director/:name', async (req, res) => {
   }
 });
 
+app.get('/api/users', (req, res) => {
+  res.status(200).json({
+    status: 'Success',
+    results: users.length,
+    data: {
+      users,
+    },
+  });
+});
+
+app.post('/api/users', (req, res) => {
+  users.push(req.body);
+  fs.writeFile(`${__dirname}/users.json`, JSON.stringify(users), (err) => {
+    res.status(201).json({
+      status: 'success',
+      data: {
+        users,
+      },
+    });
+  });
+});
+
+app.get('/api/users/:username', (req, res) => {
+  const user = users.find((el) => el.username === req.params.username);
+  if (!user) {
+    res.status(404).json({
+      status: 'Error',
+      message: 'Username does not exist',
+    });
+  }
+  res.status(200).json({
+    status: 'Success',
+    data: {
+      user,
+    },
+  });
+});
+
+app.patch('/api/users/:username', (req, res) => {
+  const user = users.find((el) => el.username === req.params.username);
+  if (!user) {
+    res.status(404).json({
+      status: 'Error',
+      message: 'Username does not exist',
+    });
+  }
+  res.status(200).json({
+    status: 'success',
+    data: {
+      users: 'Updated user here',
+    },
+  });
+});
+
+app.delete('/api/users/:username', (req, res) => {
+  const user = users.find((el) => el.username === req.params.username);
+  if (!user) {
+    res.status(404).json({
+      status: 'Error',
+      message: 'Username does not exist',
+    });
+  }
+  res.status(201).json({
+    status: 'success',
+    data: null,
+  });
+});
+
+app.delete('/api/users/:username/films/:filmid', (req, res) => {
+  const user = users.find((el) => el.username === req.params.username);
+
+  if (!user) {
+    res.status(404).json({
+      status: 'Error',
+      message: 'Username does not exist',
+    });
+  }
+
+  res.status(204).json({
+    status: 'success',
+    message: 'Film has been removed',
+  });
+});
 //get user
 //get user by username
 //post new user
