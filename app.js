@@ -18,8 +18,8 @@ const port = process.env.port || 3000;
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      //   'mongodb://localhost:27017/film-finder' //local hosting
-      process.env.MONGO_URI
+      'mongodb://localhost:27017/film-finder' //local hosting
+      // process.env.MONGO_URI
     );
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
@@ -123,12 +123,20 @@ app.get('/api/films/director/:name', async (req, res) => {
   }
 });
 
+//get user
+//get user by username
+//post new user
+//put/patch update user by username info
+//post add film to users list of favourite films
+//delete film from users favourite films
+//delete user profile
+
 // app.listen(port, () => {
 //   console.log(`Example app listening on port ${port}`);
 // });
 
-// TODO: first letter capitalise for user input
 // TODO Validating data
-// TODO: Add users
+// TODO: Add slugify
+
 // Connect locally to mongodb
 // mongodb://localhost:27017/film-finder

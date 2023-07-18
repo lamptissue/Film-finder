@@ -1,0 +1,23 @@
+[
+  {
+    "name": "John Doe",
+    "username": "johndoe",
+    "birthday": "1990-05-15",
+    "email": "john.doe@example.com",
+    "favoriteFilms": []
+  },
+  {
+    "name": "Jane Smith",
+    "username": "janesmith",
+    "birthday": "1985-09-22",
+    "email": "jane.smith@example.com",
+    "favoriteFilms": []
+  },
+  {
+    "name": "Michael Johnson",
+    "username": "michaelj",
+    "birthday": "1998-11-10",
+    "email": "michael.johnson@example.com",
+    "favoriteFilms": []
+  }
+]
