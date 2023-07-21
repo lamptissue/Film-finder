@@ -8,6 +8,7 @@ const cors = require('cors');
 app.use(cors());
 
 const Film = require('./models/filmModel');
+const User = require('./models/userModel');
 
 app.use(morgan('dev'));
 
