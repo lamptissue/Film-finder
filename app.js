@@ -37,7 +37,7 @@ connectDB().then(() => {
 
 //accesses local json file
 // const films = JSON.parse(fs.readFileSync(`${__dirname}/films.json`));
-const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`));
+// const users = JSON.parse(fs.readFileSync(`${__dirname}/users.json`));
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
@@ -208,6 +208,7 @@ app.delete('/api/users/:username/films/:filmid', (req, res) => {
     message: 'Film has been removed',
   });
 });
+
 //get user
 //get user by username
 //post new user
