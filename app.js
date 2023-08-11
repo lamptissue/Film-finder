@@ -1,4 +1,10 @@
 const mongoose = require('mongoose');
+const cors = require('cors');
+app.use(
+  cors({
+    credentials: true,
+  })
+);
 const express = require('express');
 const app = express();
 const fs = require('fs');
@@ -8,13 +14,6 @@ require('./controllers/auth');
 const authController = require('./controllers/authController');
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
-
-const cors = require('cors');
-app.use(
-  cors({
-    credentials: true,
-  })
-);
 
 const Film = require('./models/filmModel');
 const User = require('./models/userModel');
