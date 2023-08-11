@@ -17,7 +17,7 @@ const User = require('./models/userModel');
 app.use(morgan('dev'));
 app.use(
   cors({
-    credentials: true,
+    origin: '*',
   })
 );
 app.use(express.json());
