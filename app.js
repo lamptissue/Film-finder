@@ -10,7 +10,11 @@ const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
 
 const cors = require('cors');
-app.use(cors());
+app.use(
+  cors({
+    credentials: true,
+  })
+);
 
 const Film = require('./models/filmModel');
 const User = require('./models/userModel');
