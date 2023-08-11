@@ -28,8 +28,8 @@ const port = process.env.port || 3000;
 const connectDB = async () => {
   try {
     const conn = await mongoose.connect(
-      'mongodb://localhost:27017/film-finder' //local hosting
-      // process.env.MONGO_URI
+      // 'mongodb://localhost:27017/film-finder' //local hosting
+      process.env.MONGO_URI
     );
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
