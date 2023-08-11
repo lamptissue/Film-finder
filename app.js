@@ -1,10 +1,6 @@
 const mongoose = require('mongoose');
 const cors = require('cors');
-app.use(
-  cors({
-    credentials: true,
-  })
-);
+
 const express = require('express');
 const app = express();
 const fs = require('fs');
@@ -19,7 +15,11 @@ const Film = require('./models/filmModel');
 const User = require('./models/userModel');
 
 app.use(morgan('dev'));
-
+app.use(
+  cors({
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 const port = process.env.port || 3000;
