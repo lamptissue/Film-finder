@@ -184,26 +184,61 @@ app.get(
 );
 
 //update user details
+// app.patch(
+//   '/api/users/:username',
+//   passport.authenticate('jwt', { session: false }),
+//   (req, res) => {
+//     const user = User.findOne((el) => el.username === req.params.username);
+//     if (!user) {
+//       res.status(404).json({
+//         status: 'Error',
+//         message: 'Username does not exist',
+//       });
+//     }
+//     res.status(200).json({
+//       status: 'success',
+//       data: {
+//         users: 'Updated user here',
+//       },
+//     });
+//   }
+// );
 app.patch(
   '/api/users/:username',
   passport.authenticate('jwt', { session: false }),
-  (req, res) => {
-    const user = User.findOne((el) => el.username === req.params.username);
-    if (!user) {
-      res.status(404).json({
+  async (req, res) => {
+    try {
+      const username = req.params.username;
+      const updatedUserData = req.body;
+
+      const updatedUser = await User.findOneAndUpdate(
+        { username },
+        updatedUserData,
+        { new: true }
+      );
+
+      if (!updatedUser) {
+        return res.status(404).json({
+          status: 'Error',
+          message: 'Username does not exist',
+        });
+      }
+
+      res.status(200).json({
+        status: 'success',
+        data: {
+          user: updatedUser,
+        },
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({
         status: 'Error',
-        message: 'Username does not exist',
+        message: 'Internal server error',
       });
     }
-    res.status(200).json({
-      status: 'success',
-      data: {
-        users: 'Updated user here',
-      },
-    });
   }
 );
-
 app.patch(
   '/api/users/:username/films/:filmid',
   passport.authenticate('jwt', { session: false }),
