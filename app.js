@@ -163,23 +163,53 @@ app.post('/api/users/login', authController.login);
 //   }
 // );
 
+// app.get(
+//   '/api/users/:username',
+//   passport.authenticate('jwt', { session: false }),
+//   (req, res) => {
+//     const user = User.findOne((el) => el.username === req.params.username);
+//     if (!user) {
+//       res.status(404).json({
+//         status: 'Error',
+//         message: 'Username does not exist',
+//       });
+//     }
+//     res.status(200).json({
+//       status: 'Success',
+//       data: {
+//         user,
+//       },
+//     });
+//   }
+// );
+
 app.get(
   '/api/users/:username',
   passport.authenticate('jwt', { session: false }),
-  (req, res) => {
-    const user = User.findOne((el) => el.username === req.params.username);
-    if (!user) {
-      res.status(404).json({
+  async (req, res) => {
+    try {
+      const user = await User.findOne({ username: req.params.username });
+
+      if (!user) {
+        return res.status(404).json({
+          status: 'Error',
+          message: 'Username does not exist',
+        });
+      }
+
+      res.status(200).json({
+        status: 'Success',
+        data: {
+          user,
+        },
+      });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({
         status: 'Error',
-        message: 'Username does not exist',
+        message: 'Unable to find username error',
       });
     }
-    res.status(200).json({
-      status: 'Success',
-      data: {
-        user,
-      },
-    });
   }
 );
 
