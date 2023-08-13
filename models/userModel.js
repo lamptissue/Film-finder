@@ -30,8 +30,7 @@ const userSchema = new mongoose.Schema({
     lowercase: true,
     validate: [validator.isEmail],
   },
-  // favouriteFilms: [{ type: mongoose.Schema.Types.id, ref: 'Film' }],
-  favouriteFilms: [String],
+  favouriteFilms: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Film' }],
 });
 
 userSchema.pre('save', async function (next) {
