@@ -274,7 +274,8 @@ app.patch(
   passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
-      const filmIdToAdd = req.params.filmid;
+      // const filmIdToAdd = req.params.filmid;
+      const filmIdToAdd = mongoose.Types.ObjectId(req.params.filmid);
 
       const user = await User.findOneAndUpdate(
         { username: req.params.username },
