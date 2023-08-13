@@ -278,7 +278,7 @@ app.patch(
 
       const user = await User.findOneAndUpdate(
         { username: req.params.username },
-        { $push: { favouriteFilms: filmIdToAdd } },
+        { $addToSet: { favouriteFilms: filmIdToAdd } },
         { new: true, upsert: true }
       );
 
