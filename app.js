@@ -212,7 +212,7 @@ app.patch(
     }
   }
 );
-app.patch(
+app.post(
   '/api/users/:username/films/:filmid',
   passport.authenticate('jwt', { session: false }),
   async (req, res) => {
