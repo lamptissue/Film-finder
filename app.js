@@ -186,7 +186,10 @@ app.patch(
       const updatedUserData = req.body;
 
       const saltRounds = 10; // Number of salt rounds for bcrypt
-      const hashedPassword = await bcrypt.hash(updatedPassword, saltRounds);
+      const hashedPassword = await bcrypt.hash(
+        updatedUserData.password,
+        saltRounds
+      );
 
       const updatedUser = await User.findOneAndUpdate(
         { username },
