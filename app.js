@@ -185,8 +185,13 @@ app.patch(
       const username = req.params.username;
       const updatedUserData = req.body;
 
+      const saltRounds = 10; // Number of salt rounds for bcrypt
+      const hashedPassword = await bcrypt.hash(updatedPassword, saltRounds);
+
       const updatedUser = await User.findOneAndUpdate(
         { username },
+        { password: hashedPassword },
+
         updatedUserData,
         { new: true }
       );
@@ -233,12 +238,10 @@ app.post(
           message: 'Film is already in favourites',
         });
       }
-      const saltRounds = 10; // Number of salt rounds for bcrypt
-      const hashedPassword = await bcrypt.hash(updatedPassword, saltRounds);
+
       // If the film doesn't exist in the user's favorites, add it
       const user = await User.findOneAndUpdate(
         { username },
-        { password: hashedPassword },
         { $addToSet: { favouriteFilms: filmIdToAdd } },
         { new: true, upsert: true }
       );
