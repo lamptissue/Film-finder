@@ -10,7 +10,7 @@ require('./controllers/auth');
 const authController = require('./controllers/authController');
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 
 const Film = require('./models/filmModel');
 const User = require('./models/userModel');
