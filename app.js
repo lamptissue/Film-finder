@@ -10,6 +10,7 @@ require('./controllers/auth');
 const authController = require('./controllers/authController');
 const dotenv = require('dotenv');
 dotenv.config({ path: './config.env' });
+const bcrypt = require('bcrypt');
 
 const Film = require('./models/filmModel');
 const User = require('./models/userModel');
@@ -232,10 +233,12 @@ app.post(
           message: 'Film is already in favourites',
         });
       }
-
+      const saltRounds = 10; // Number of salt rounds for bcrypt
+      const hashedPassword = await bcrypt.hash(updatedPassword, saltRounds);
       // If the film doesn't exist in the user's favorites, add it
       const user = await User.findOneAndUpdate(
         { username },
+        { password: hashedPassword },
         { $addToSet: { favouriteFilms: filmIdToAdd } },
         { new: true, upsert: true }
       );
