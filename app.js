@@ -148,7 +148,7 @@ app.post('/api/users/login', authController.login);
 
 app.get(
   '/api/users/:username',
-  // passport.authenticate('jwt', { session: false }),
+  passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
       const user = await User.findOne({ username: req.params.username });
@@ -214,7 +214,7 @@ app.patch(
 );
 app.post(
   '/api/users/:username/films/:filmid',
-  // passport.authenticate('jwt', { session: false }),
+  passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
       const filmIdToAdd = req.params.filmid;
@@ -263,7 +263,7 @@ app.post(
 
 app.delete(
   '/api/users/:username',
-  // passport.authenticate('jwt', { session: false }),
+  passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
       const user = await User.findOneAndDelete({
@@ -291,7 +291,7 @@ app.delete(
 
 app.delete(
   '/api/users/:username/films/:filmid',
-  // passport.authenticate('jwt', { session: false }),
+  passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
       const user = await User.findOneAndUpdate(
