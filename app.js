@@ -178,7 +178,7 @@ app.get(
 
 app.patch(
   '/api/users/:username',
-  // passport.authenticate('jwt', { session: false }),
+  passport.authenticate('jwt', { session: false }),
   async (req, res) => {
     try {
       const username = req.params.username;
